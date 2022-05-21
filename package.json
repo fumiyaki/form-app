@@ -1,6 +1,8 @@
 {
   "private": true,
   "main": "main/index.js",
+  "name": "form-app",
+  "version": "1.0.0",
   "productName": "ElectronTypescriptNext",
   "scripts": {
     "clean": "rimraf dist main renderer/out renderer/.next",
