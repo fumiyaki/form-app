@@ -21,13 +21,15 @@ const IndexPage = () => {
       ) : (
         <>
           <div>
-            <div>氏名</div>
+            <h1 style={{ color: "red" }}>候補者情報入力フォーム</h1>
+            <hr />
             <div>
-              <input type="text" placeholder="code4biz" />
-              <input type="text" placeholder="太郎" />
+              <div>氏名</div>
+              <div>
+                <input type="text" placeholder="code4biz" />
+                <input type="text" placeholder="太郎" />
+              </div>
             </div>
-          </div>
-          <div>
             <div>面接フェーズ</div>
             <div>
               <div>
@@ -52,6 +54,10 @@ const IndexPage = () => {
               </div>
             </div>
             <div>
+              <div>面接日時</div>
+              <input type="date" name="example" required />
+            </div>
+            <div>
               <div>面接メモ</div>
               <textarea
                 name="memo"
@@ -60,14 +66,13 @@ const IndexPage = () => {
                 placeholder="type here..."
               />
             </div>
-          </div>
-          <div>
-            <div>面接日時</div>
-            <input type="date" name="example" required />
+            <hr />
+            <button onClick={() => setIsFormDone((isForm) => !isForm)}>
+              登録する
+            </button>
           </div>
         </>
       )}
-      <h1 style={{ color: "red" }}>Hello Next.js & Electron 👋</h1>
       <button onClick={() => setIsFormDone((isForm) => !isForm)}>
         Say hi to electron
       </button>
