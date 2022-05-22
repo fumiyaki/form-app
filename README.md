@@ -42,3 +42,17 @@ _note regarding types:_
 - Electron provides its own type definitions, so you don't need @types/electron installed!
   source: https://www.npmjs.com/package/@types/electron
 - There were no types available for `electron-next` at the time of creating this example, so until they are available there is a file `electron-next.d.ts` in `electron-src` directory.
+
+My Note
+build app
+M1 Mac 用
+npx electron-builder --dir --mac --arm64
+
+Intel Mac 用
+npx electron-builder --dir --mac --x64
+
+Intel / M1 両方で実行できるユニバーサルビルド
+npx electron-builder --dir --mac --universal
+
+Windows 用
+npx electron-builder --dir --win --x64
